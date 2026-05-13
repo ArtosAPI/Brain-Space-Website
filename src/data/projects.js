@@ -7,8 +7,8 @@ export const projects = [
 		techStack: ["React Native", "Firebase", "AWS"],
 		image: "https://placehold.co/600x400/0B1D3A/FF6600?text=SmartDelivery",
 		screenshots: [
-			"src/assets/smartdelivery.png",
-			"src/assets/smartdelivery1.png"
+			"screenshots/smartdelivery.png",
+			"screenshots/smartdelivery1.png"
 		],
 		year: 2025,
 	},
@@ -30,7 +30,7 @@ export const projects = [
 		techStack: ["React Native", "Python", "Django", "Docker"],
 		image: "https://placehold.co/600x400/0B1D3A/FF6600?text=MedApp",
 		screenshots: [
-			"src/assets/medapp.png"
+			"screenshots/medapp.png"
 		],
 		year: 2024,
 	},
@@ -42,8 +42,8 @@ export const projects = [
 		techStack: ["React", "Node.js", "MongoDB", "Docker"],
 		image: "https://placehold.co/600x400/0B1D3A/FF6600?text=ShopFlow",
 		screenshots: [
-			"src/assets/shopflow1.png",
-			"src/assets/shopflow2.png",
+			"screenshots/shopflow1.png",
+			"screenshots/shopflow2.png",
 		],
 		year: 2023,
 	},
@@ -55,8 +55,8 @@ export const projects = [
 		techStack: ["React", "Node.js", "PostgreSQL", "Redis"],
 		image: "https://placehold.co/600x400/0B1D3A/FF6600?text=CRM%2B",
 		screenshots: [
-			"src/assets/crmplus.png",
-			"src/assets/crmplus1.png"
+			"screenshots/crmplus.png",
+			"screenshots/crmplus1.png"
 		],
 		year: 2022
 	}
