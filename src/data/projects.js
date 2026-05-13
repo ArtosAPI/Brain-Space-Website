@@ -7,11 +7,10 @@ export const projects = [
 		techStack: ["React Native", "Firebase", "AWS"],
 		image: "https://placehold.co/600x400/0B1D3A/FF6600?text=SmartDelivery",
 		screenshots: [
-			"https://placehold.co/600x400/0B1D3A/FF6600?text=Скриншот+1",
-			"https://placehold.co/600x400/0B1D3A/FF6600?text=Скриншот+2"
+			"src/assets/smartdelivery.png",
+			"src/assets/smartdelivery1.png"
 		],
 		year: 2025,
-		link: null
 	},
 	{
 		id: "eduhub",
@@ -22,7 +21,6 @@ export const projects = [
 		image: "https://placehold.co/600x400/0B1D3A/FF6600?text=EduHub",
 		screenshots: [],
 		year: 2024,
-		link: "https://example.com/eduhub-demo"
 	},
 	{
 		id: "medapp",
@@ -32,21 +30,9 @@ export const projects = [
 		techStack: ["React Native", "Python", "Django", "Docker"],
 		image: "https://placehold.co/600x400/0B1D3A/FF6600?text=MedApp",
 		screenshots: [
-			"https://placehold.co/600x400/0B1D3A/FF6600?text=Скриншот+1"
+			"src/assets/medapp.png"
 		],
 		year: 2024,
-		link: null
-	},
-	{
-		id: "finanalytic",
-		title: "FinAnalytic",
-		client: "АО «ИнвестПро»",
-		description: "Аналитическая панель для финансовых советников. Визуализация портфелей, графики доходности, расчёт рисков, экспорт отчётов. Обновление данных в реальном времени через WebSocket.",
-		techStack: ["React", "TypeScript", "Chart.js", "AWS Lambda"],
-		image: "https://placehold.co/600x400/0B1D3A/FF6600?text=FinAnalytic",
-		screenshots: [],
-		year: 2023,
-		link: "https://example.com/finanalytic"
 	},
 	{
 		id: "shopflow",
@@ -56,12 +42,10 @@ export const projects = [
 		techStack: ["React", "Node.js", "MongoDB", "Docker"],
 		image: "https://placehold.co/600x400/0B1D3A/FF6600?text=ShopFlow",
 		screenshots: [
-			"https://placehold.co/600x400/0B1D3A/FF6600?text=Скриншот+1",
-			"https://placehold.co/600x400/0B1D3A/FF6600?text=Скриншот+2",
-			"https://placehold.co/600x400/0B1D3A/FF6600?text=Скриншот+3"
+			"src/assets/shopflow1.png",
+			"src/assets/shopflow2.png",
 		],
 		year: 2023,
-		link: null
 	},
 	{
 		id: "crmplus",
@@ -71,10 +55,9 @@ export const projects = [
 		techStack: ["React", "Node.js", "PostgreSQL", "Redis"],
 		image: "https://placehold.co/600x400/0B1D3A/FF6600?text=CRM%2B",
 		screenshots: [
-			"https://placehold.co/600x400/0B1D3A/FF6600?text=Дашборд",
-			"https://placehold.co/600x400/0B1D3A/FF6600?text=Сделки"
+			"src/assets/crmplus.png",
+			"src/assets/crmplus1.png"
 		],
-		year: 2022,
-		link: "https://crmplus-demo.brainspace.ru"
+		year: 2022
 	}
 ];

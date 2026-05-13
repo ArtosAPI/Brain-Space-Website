@@ -1,6 +1,15 @@
 // src/components/Footer.jsx
+import { NavLink } from 'react-router-dom';
 import { siteSettings } from '../data/siteSettings';
 import logoPlaceholder from '../assets/logo-placeholder.png'; // ← замени на реальный логотип
+
+const navItems = [
+	{ path: "/", label: "Главная" },
+	{ path: "/services", label: "Услуги" },
+	{ path: "/projects", label: "Проекты" },
+	{ path: "/news", label: "Новости" },
+	{ path: "/contacts", label: "Контакты" },
+];
 
 export default function Footer() {
 	return (
@@ -16,7 +25,6 @@ export default function Footer() {
 						/>
 						<h3 className="font-bold text-lg">
 							{siteSettings.companyName}
-							{/* <sup className="text-xs">&reg;</sup> */}
 						</h3>
 					</div>
 					<p>{siteSettings.address}</p>
@@ -43,20 +51,30 @@ export default function Footer() {
 					</ul>
 				</div>
 
-				{/* Навигация */}
+				{/* Навигация (теперь с NavLink) */}
 				<div className="flex flex-col items-center">
 					<h4 className="font-semibold mb-2">Навигация</h4>
-					<ul className="space-y-1">
-						<li><a href="/" className="hover:text-[#FF6600]">Главная</a></li>
-						<li><a href="/services" className="hover:text-[#FF6600]">Услуги</a></li>
-						<li><a href="/projects" className="hover:text-[#FF6600]">Проекты</a></li>
-						<li><a href="/news" className="hover:text-[#FF6600]">Новости</a></li>
-						<li><a href="/contacts" className="hover:text-[#FF6600]">Контакты</a></li>
-					</ul>
+					<nav>
+						<ul className="space-y-1">
+							{navItems.map(item => (
+								<li key={item.path}>
+									<NavLink
+										to={item.path}
+										className={({ isActive }) =>
+											`hover:text-[#FF6600] transition ${isActive ? 'text-[#FF6600] font-semibold' : ''
+											}`
+										}
+									>
+										{item.label}
+									</NavLink>
+								</li>
+							))}
+						</ul>
+					</nav>
 				</div>
 			</div>
 
-			{/* Нижняя строка с копирайтом */}
+			{/* Копирайт */}
 			<div className="border-t border-gray-700 text-center text-sm text-gray-400 py-4">
 				&copy; {new Date().getFullYear()} {siteSettings.companyName}. Все права защищены.
 			</div>
